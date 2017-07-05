@@ -7,11 +7,11 @@ Key Requirements: An internal application for the certification deparment. This 
 - Ability to import and export data to excel sheets
 
 ## Model
-- Specimen Sets
+- Materials
 
 
 ### Next Step
-- Add devise
+- Add search and data entry links
 
 #### Versions
 - ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
