@@ -1,7 +1,14 @@
 class SpecimenController < ApplicationController
+before_action :set_specimen, only: [:show, :edit, :update] 
 
   def new
     @specimen = Speciman.new
+  end
+  
+  def show
+  end
+  
+  def edit
   end
   
   def create 
@@ -13,13 +20,21 @@ class SpecimenController < ApplicationController
     end
   end
   
-  def show
-    @specimen = Speciman.find(params[:id])
+  def update
+    if @specimen.update(specimen_params)
+      redirect_to @specimen, notice: 'Workout was successfully updated.'
+    else
+      render action: 'edit'
+    end
   end
-
 end
 
+
 private 
+
+def set_specimen
+  @specimen = Speciman.find(params[:id])
+end
 
 def specimen_params
   params.require(:speciman).permit(:test_plan)
