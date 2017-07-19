@@ -1,0 +1,2 @@
+class SpecimenController < ApplicationController
+end
