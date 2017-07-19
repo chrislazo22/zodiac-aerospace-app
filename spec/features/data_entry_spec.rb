@@ -26,5 +26,29 @@ describe 'data entry page' do
       
       expect(page.status_code).to eq(200)
     end
+    
+    it 'allows admin to add new material' do 
+      visit new_speciman_path
+      
+      fill_in 'speciman[test_plan]', with: "4FR4132-00"
+      click_on "Submit"
+      
+      expect(page).to have_content("4FR4132-00")
+    end
+  end
+  
+  describe 'edit' do
+    before do 
+      @speciman = Speciman.create(test_plan: "4FR4132-00")
+    end
+    
+    it 'allows admin to edit the material page' do 
+      visit edit_speciman_path(@speciman)
+      
+      fill_in 'speciman[test_plan]', with: "4FR4132-2"
+      click_on "Submit"
+      
+      expect(page).to have_content("4FR4132-00")
+    end
   end
 end
