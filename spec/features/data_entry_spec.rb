@@ -16,11 +16,15 @@ describe 'data entry page' do
        find_link('Update Existing Material').visible?
     end
   end
+  
   describe 'new' do
     it 'can be reached successfully' do 
       visit data_entry_path
       
-      click_lick('Add New Material')
+      click_link('Add New Material')
+      visit new_speciman_path
+      
+      expect(page.status_code).to eq(200)
     end
   end
 end

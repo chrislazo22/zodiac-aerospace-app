@@ -1,0 +1,140 @@
+<h1>Add New Fireblock Material</h1>
+
+<%= form_for @specimen do |f| %>
+  <div>
+    <%= f.label :pass_or_fail %>
+    <%= f.text_field :pass_or_fail %>
+  </div>
+  <div>
+    <%= f.label :test_plan, "Test Plan" %>
+    <%= f.text_field :test_plan %>
+  </div>
+  <div>
+    <%= f.label :cushion %>
+    <%= f.text_field :cushion %>
+  </div>
+  <div>
+    <%= f.label :test_plan_id %>
+    <%= f.text_field :test_plan_id %>
+  </div>
+  <div>
+    <%= f.label :seat_model %>
+    <%= f.text_field :seat_model %>
+  </div>
+  <div>
+    <%= f.label :test_date %>
+    <%= f.date_select :test_date %>
+  </div>
+  <div>
+    <%= f.label :vert_burn_length_front %>
+    <%= f.text_field :vert_burn_length_front %>
+  </div>
+  <div>
+    <%= f.label :vert_burn_length_back %>
+    <%= f.text_field :vert_burn_length_back %>
+  </div>
+  <div>
+    <%= f.label :horiz_burn_length_top %>
+    <%= f.text_field :horiz_burn_length_top %>
+  </div>
+  <div>
+    <%= f.label :horiz_burn_length_bottom %>
+    <%= f.text_field :horiz_burn_length_bottom %>
+  </div>
+  <div>
+    <%= f.label :weight_loss_lbs %>
+    <%= f.text_field :weight_loss_lbs %>
+  </div>
+  <div>
+    <%= f.label :weight_loss_percent %>
+    <%= f.text_field :weight_loss_percent %>
+  </div>
+  <div>
+    <%= f.label :cover_config %>
+    <%= f.text_field :cover_config %>
+  </div>
+  <div>
+    <%= f.label :foam_a_material %>
+    <%= f.text_field :foam_a_material %>
+    <%= f.label :foam_a_percent %>
+    <%= f.number_field :foam_a_percent %>
+  </div>
+  <div>
+    <%= f.label :foam_b_material %>
+    <%= f.text_field :foam_b_material %>
+    <%= f.label :foam_b_percent %>
+    <%= f.number_field :foam_b_percent %>
+  </div>
+  <div>
+    <%= f.label :foam_c_material %>
+    <%= f.text_field :foam_c_material %>
+    <%= f.label :foam_c_percent %>
+    <%= f.number_field :foam_c_percent %>
+  </div>
+  <div>
+    <%= f.label :foam_d_material %>
+    <%= f.text_field :foam_d_material %>
+    <%= f.label :foam_d_percent %>
+    <%= f.number_field :foam_d_percent %>
+  </div>
+  <div>
+    <%= f.label :foam_e_material %>
+    <%= f.text_field :foam_e_material %>
+    <%= f.label :foam_e_percent %>
+    <%= f.number_field :foam_e_percent %>
+  </div>
+  <div>
+    <%= f.label :decorative_insulation_part_number %>
+    <%= f.text_field :decorative_insulation_part_number %>
+  </div>
+  <div>
+    <%= f.label :decorative_insulation_mfr %>
+    <%= f.text_field :decorative_insulation_mfr %>
+  </div>
+  <div>
+    <%= f.label :backing %>
+    <%= f.text_field :backing %>
+  </div>
+  <div>
+    <%= f.label :adhesive_one %>
+    <%= f.text_field :adhesive_one %>
+  </div>
+  <div>
+    <%= f.label :adhesive_two %>
+    <%= f.text_field :adhesive_two %>
+  </div>
+  <div>
+    <%= f.label :fireblock_type %>
+    <%= f.text_field :fireblock_type %>
+  </div>
+  <div>
+    <%= f.label :fireblock_part_number %>
+    <%= f.text_field :fireblock_part_number %>
+  </div>
+  <div>
+    <%= f.label :fireblock_color %>
+    <%= f.text_field :fireblock_color %>
+  </div>
+  <div>
+    <%= f.label :fireblock_mfr %>
+    <%= f.text_field :fireblock_mfr %>
+  </div>
+  <div>
+    <%= f.label :flame_treatment %>
+    <%= f.text_field :flame_treatment %>
+  </div>
+  <div>
+    <%= f.label :fireblock_percent %>
+    <%= f.text_field :fireblock_percent %>
+  </div>
+  <div>
+    <%= f.label :thermoplastic_part_number %>
+    <%= f.text_field :thermoplastic_part_number %>
+  </div>
+  <div>
+    <%= f.label :thermoplastic_mfr %>
+    <%= f.text_field :thermoplastic_mfr %>
+  </div>
+<% end %>
+
+<%= link_to "Back", data_entry_path %>

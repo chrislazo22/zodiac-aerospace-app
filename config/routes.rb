@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root to: 'static#home'
   
   get '/data_entry', to: 'static#data_entry'
+  
+  resources :specimen
 end
