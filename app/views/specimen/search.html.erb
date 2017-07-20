@@ -1,0 +1,7 @@
+<%= form_tag(specimen_path, :method => 'get') do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search" %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>
+
+<%= link_to "Back", data_entry_path %> 
+  

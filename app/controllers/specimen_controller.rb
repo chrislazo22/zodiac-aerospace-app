@@ -1,6 +1,15 @@
 class SpecimenController < ApplicationController
 before_action :set_specimen, only: [:show, :edit, :update] 
 
+  def index
+    @specimen = Speciman.all
+    if params[:search]
+      @specimen = Speciman.search(params[:search]).order("created_at DESC")
+    else
+      @specimen = Speciman.all.order("created_at DESC")
+    end
+  end
+
   def new
     @specimen = Speciman.new
   end
@@ -27,15 +36,19 @@ before_action :set_specimen, only: [:show, :edit, :update]
       render action: 'edit'
     end
   end
+  
+  def search
+  end
+  
+  private 
+
+  def set_specimen
+    @specimen = Speciman.find(params[:id])
+  end
+  
+  def specimen_params
+    params.require(:speciman).permit(:test_plan)
+  end
 end
 
 
-private 
-
-def set_specimen
-  @specimen = Speciman.find(params[:id])
-end
-
-def specimen_params
-  params.require(:speciman).permit(:test_plan)
-end

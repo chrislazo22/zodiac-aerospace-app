@@ -1,0 +1,5 @@
+<% if @specimen.blank? %>
+  <h4>There are no materials containing the <%= params[:search] %>.</h4>
+<% else %>
+  <%= @specimen.inspect %>  
+<% end %>

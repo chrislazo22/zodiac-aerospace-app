@@ -51,4 +51,12 @@ describe 'data entry page' do
       expect(page).to have_content("4FR4132-2")
     end
   end
+  
+  describe 'search function' do 
+    it 'has a search bar' do
+      visit "/search"
+      
+      find_field('Search').value
+    end
+  end
 end

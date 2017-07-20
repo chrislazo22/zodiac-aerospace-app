@@ -10,8 +10,8 @@ Key Requirements: An internal application for the certification deparment. This 
 - Materials
 
 
-### Next Steps
-- Add view for data entry path
+### Next Step(s)
+- Search function for materials 
 
 #### Versions
 - ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
