@@ -25,3 +25,4 @@ group :development do
 end
 
 gem 'devise', '~> 4.2'
+gem 'pry-rails', group: [:development, :test]

@@ -2,11 +2,8 @@ class SpecimenController < ApplicationController
 before_action :set_specimen, only: [:show, :edit, :update] 
 
   def index
-    @specimen = Speciman.all
-    if params[:search]
-      @specimen = Speciman.search(params[:search]).order("created_at DESC")
-    else
-      @specimen = Speciman.all.order("created_at DESC")
+    if params[:serach]
+      @specimen = Speciman.search(params[:search])
     end
   end
 

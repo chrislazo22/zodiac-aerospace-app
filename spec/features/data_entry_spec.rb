@@ -58,5 +58,14 @@ describe 'data entry page' do
       
       find_field('Search').value
     end
+    
+    it 'outputs a value' do 
+      visit search_path
+      
+      fill_in :search, with: "4FR4114-12"
+      click_button('Search')
+      
+      expect(page).to have_content("4FR4114-12")
+    end
   end
 end
