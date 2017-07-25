@@ -26,5 +26,4 @@ end
 
 gem 'devise', '~> 4.2'
 gem 'pry-rails', group: [:development, :test]
-
-#add bootstrap gem for front end
+gem 'bootstrap-sass', '~> 3.3.6'
