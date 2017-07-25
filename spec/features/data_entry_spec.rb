@@ -52,16 +52,16 @@ describe 'data entry page' do
     end
   end
   
-  describe 'search function' do 
+  describe 'search function' do
+    before do 
+      visit search_path
+    end
+    
     it 'has a search bar' do
-      visit "/search"
-      
       find_field('Search').value
     end
     
     it 'outputs a value' do 
-      visit search_path
-      
       fill_in :search, with: "4FR4114-12"
       click_button('Search')
       
