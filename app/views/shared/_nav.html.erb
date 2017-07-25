@@ -1,6 +1,6 @@
 <ul class="nav nav-tabs">
 	<li class="active">
-		<a href="#">Home</a>
+		<%= link_to "Home", root_path %>
 	</li>
 	<li>
 		<a href="#">Instructions</a>
@@ -12,7 +12,7 @@
 		 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<strong class="caret"></strong></a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="#">Action</a>
+				<%= link_to "Logout", destroy_user_session_path, method: :delete %>
 			</li>
 			<li>
 				<a href="#">Another action</a>
@@ -28,3 +28,4 @@
 		</ul>
 	</li>
 </ul>
+
