@@ -1,5 +1,8 @@
 class Speciman < ActiveRecord::Base
+  
   def self.search(search)
-    Speciman.where("test_plan LIKE ?" "%#{search}%")
+    if search
+      find(:all, :conditions => ['test_plan LIKE ?', "%#{params[:search]}%"])
+    end
   end
 end

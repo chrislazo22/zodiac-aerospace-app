@@ -2,9 +2,7 @@ class SpecimenController < ApplicationController
 before_action :set_specimen, only: [:show, :edit, :update] 
 
   def index
-    if params[:serach]
-      @specimen = Speciman.search(params[:search])
-    end
+    @specimen = Speciman.search(params[:serach])
   end
 
   def new
