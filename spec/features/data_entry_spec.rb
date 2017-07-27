@@ -37,6 +37,18 @@ describe 'data entry page' do
     end
   end
   
+  describe 'show' do 
+    before do 
+      @speciman = Speciman.create(test_plan: "4FR4132-00")
+    end
+    it 'links to shows page index' do 
+      visit specimen_path
+      click_link('4FR4132-00')
+      
+      expect(page).to have_content('4FR4132-00')
+    end
+  end
+  
   describe 'edit' do
     before do 
       @speciman = Speciman.create(test_plan: "4FR4132-00")
@@ -45,11 +57,11 @@ describe 'data entry page' do
     it 'allows admin to edit the material page' do 
       visit edit_speciman_path(@speciman)
       
-      fill_in 'speciman[test_plan]', with: "4FR4132-2"
+      fill_in 'speciman[test_plan]', with: "4FR4132-00"
       click_on "Submit"
       
       visit specimen_path
-      expect(page).to have_content("4FR4132-2")
+      expect(page).to have_content("4FR4132-00")
     end
   end
   

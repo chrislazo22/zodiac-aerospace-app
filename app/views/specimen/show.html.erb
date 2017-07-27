@@ -1,1 +1,83 @@
-<%= link_to "Back", data_entry_path %>
+<table class="table">
+	<tbody>
+		<tr>
+			<td><b>Test Plan: </b></td>
+			<td><%= @specimen.test_plan %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Cushion: </b></td>
+			<td><%= @specimen.cushion %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Cushion: </b></td>
+			<td><%= @specimen.test_plan_id %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Seat Model: </b></b></td>
+			<td><%= @specimen.seat_model %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Test Date: </b></td>
+			<td><%= @specimen.test_date %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Vertical Burn Length (Front): </b></td>
+			<td><%= @specimen.vert_burn_length_front %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Vertical Burn Length (Back): </b></td>
+			<td><%= @specimen.vert_burn_length_back %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Horizaontal Burn Length (Top): </b></td>
+			<td><%= @specimen.horiz_burn_length_top %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Horizaontal Burn Length (Bottom): </b></td>
+			<td><%= @specimen.horiz_burn_length_bottom %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Weight Loss (Lbs): </b></td>
+			<td><%= @specimen.weight_loss_lbs %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Weight Loss (Percent): </b></td>
+			<td><%= @specimen.weight_loss_percent %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Cover Configuration: </b></td>
+			<td><%= @specimen.cover_config %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Foam A: </b></td>
+			<td><%= @specimen.foam_a_material %></td>
+		</tr>
+		<tr>
+			<td><b>Foam B: </b></td>
+			<td><%= @specimen.foam_b_material %></td>
+		</tr>
+		<tr>
+			<td><b>Fireblock Type: </b></td>
+			<td><%= @specimen.fireblock_type %></td>
+		</tr>
+	</tbody>
+</table>
+
+<div>
+  <%= link_to "Edit Material", edit_speciman_path(@specimen) %>
+</div>
+<div>
+  <%= link_to "Back", specimen_path, :method => 'get' %>
+</div>
