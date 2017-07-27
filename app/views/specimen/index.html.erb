@@ -1,5 +1,86 @@
 <% if @specimen.blank? %>
   <h4>There are no materials containing the <%= params[:search] %>.</h4>
-<% else %>
-  <%= @specimen.inspect %>
+  <% else %>
+  <table class="table">
+  	<thead>
+  		<tr>
+  			<th>
+  			</th>
+  			<th>Test Plan</th>
+  			<th>Cushion</th>
+  			<th>Seat Model</th>
+  			<th>Foam A</th>
+  			<th>Foam B</th>
+  			<th>Fireblock Type</th>
+  			<th>Flame Treatment</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr>
+  		  <% @specimen.each do |specimen| %>
+  			<td>1</td>
+  			<td><%= specimen.test_plan %></td>
+  			<td><% binding.pry %><%= specimen.cushion %></td>
+  		</tr>
+  		<tr class="active">
+  			<td>
+  				1
+  			</td>
+  			<td>
+  				TB - Monthly
+  			</td>
+  			<td>
+  				01/04/2012
+  			</td>
+  			<td>
+  				Approved
+  			</td>
+  		</tr>
+  		<tr class="success">
+  			<td>
+  				2
+  			</td>
+  			<td>
+  				TB - Monthly
+  			</td>
+  			<td>
+  				02/04/2012
+  			</td>
+  			<td>
+  				Declined
+  			</td>
+  		</tr>
+  		<tr class="warning">
+  			<td>
+  				3
+  			</td>
+  			<td>
+  				TB - Monthly
+  			</td>
+  			<td>
+  				03/04/2012
+  			</td>
+  			<td>
+  				Pending
+  			</td>
+  		</tr>
+  		<tr class="danger">
+  			<td>
+  				4
+  			</td>
+  			<td>
+  				TB - Monthly
+  			</td>
+  			<td>
+  				04/04/2012
+  			</td>
+  			<td>
+  				Call in to confirm
+  			</td>
+      <% end %>
+  		</tr>
+  	</tbody>
+  </table>
 <% end %>
+
+<%= link_to "Back", search_path %>

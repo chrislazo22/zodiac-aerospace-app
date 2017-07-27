@@ -11,7 +11,6 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Bootstrap
 - Seed data
 
 #### Versions
