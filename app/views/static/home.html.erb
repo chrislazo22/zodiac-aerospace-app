@@ -1,3 +1,22 @@
-<br><%= link_to 'Search' %></br>
-
-<br><%= link_to 'Data Entry', data_entry_path %></br>
+<div class="jumbotron">
+	<h2 class="text-center">
+		Welcome to the Zodiac Aerospace Fireblock Test Database.
+	</h2>
+	<p>
+		This database contains flammability test configurations, 
+		materials, constructions, test results and related information 
+		for various Zodiac Aerospace programs.
+		The database maybe searched by general or specific test specimen
+		constructions and materials, specific document information
+		or material manufacturer by picking the applicable search button
+		below.
+	</p>
+	
+	<p>
+		<%= link_to "Search", search_path, class: "btn btn-primary btn-lg btn-block" %>
+	</p>
+	
+	<p>
+		<%= link_to 'Data Entry', data_entry_path, class: "btn btn-primary btn-lg btn-block"  %>
+	</p>
+</div>
