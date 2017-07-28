@@ -17,6 +17,8 @@
 	</p>
 	
 	<p>
-		<%= link_to 'Data Entry', data_entry_path, class: "btn btn-primary btn-lg btn-block"  %>
+		<% if current_user.admin? %>
+			<%= link_to 'Data Entry', data_entry_path, class: "btn btn-primary btn-lg btn-block"  %>
+		<% end %>
 	</p>
 </div>

@@ -3,5 +3,9 @@
   <%= submit_tag "Search", :name => nil %>
 <% end %>
 
-<%= link_to "Back", data_entry_path %> 
+<% if current_user.admin? %>
+  <%= link_to "Back", data_entry_path %>
+<% else %>
+  <%= link_to "Back", root_path %>
+<% end %>
   
