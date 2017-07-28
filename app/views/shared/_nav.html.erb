@@ -12,6 +12,9 @@
 			 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Options<strong class="caret"></strong></a>
 			<ul class="dropdown-menu">
 				<li>
+					<%= link_to "Admin", admin_path%>
+				</li>
+				<li>
 					<%= link_to "Logout", destroy_user_session_path, method: :delete %>
 				</li>
 			</ul>

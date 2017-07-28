@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   
   get '/data_entry', to: 'static#data_entry'
   get '/search', to: 'specimen#search'
+  get '/admin', to: 'admin#index'
+  
+  get 'create_user', to: 'admin#create'
   
   resources :specimen
 end

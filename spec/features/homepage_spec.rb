@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'homepage' do 
   describe 'navigation' do 
     before do 
-      @user = User.create(email: "user@user.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "User", last_name: "1")
+      @user = User.create(email: "user@user.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "User", last_name: "1", admin: true)
       login_as(@user, :scope => :user)
       visit root_path
     end
