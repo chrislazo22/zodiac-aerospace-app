@@ -14,10 +14,9 @@ Key Requirements: An internal application for the certification deparment. This 
 ### Next Step(s)
 - Seed data
 - Add users via Admin page, users cannot create their own profile
-- Limit access for users
 - Add instruction page
 - Clean up form for data material via dropdowns, categorize data
-- Search page, search via categories 
+- Search page, add categories 
 - Row Numbers
 - Refactor search back links
 
