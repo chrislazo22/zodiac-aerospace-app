@@ -1,10 +1,10 @@
 <% if current_user %>
 	<ul class="nav nav-tabs">
-		<li class="active">
+		<li class="<%= active?(root_path) %>">
 			<%= link_to "Home", root_path %>
 		</li>
 		
-		<li class="active">
+		<li class="<%= active?(admin_path) %>">
 			<%= link_to "Instructions" %>
 		</li>
 		

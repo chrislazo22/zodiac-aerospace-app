@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+100.times do |specimen|
+  Speciman.create!(pass_or_fail: "pass", test_plan: "4FR4132-00", cushion: "Headrest", test_plan_id: "1", seat_model:4132, test_date: Date.today, vert_burn_length_front: 1.0, vert_burn_length_back: 1.0, horiz_burn_length_top: 1.0) 
+end
+
+puts "100 items have been created"
