@@ -4,7 +4,7 @@ class AdminController < ApplicationController
   def index
   end
   
-  def create
+  def create_user
   end
   
   private

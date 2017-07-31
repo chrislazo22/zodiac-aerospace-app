@@ -13,9 +13,11 @@ describe 'admin page' do
     end
     
     it 'can create user' do 
-      click_link("Create User")
+      click_on("Create User")
       
-      # visit '/create_user'
+      visit '/create_user'
+      
+      expect(page).to have_content("First Name")
     end
   end
 end
