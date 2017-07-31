@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'data entry page' do
   before do 
-      @user = @user = User.create(email: "user@user.com", password: "asdfasdf")
+      @user = @user = User.create(email: "user@user.com", password: "asdfasdf", admin: true)
       login_as(@user, :scope => :user)
       visit data_entry_path
     end

@@ -12,7 +12,7 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Paginate data pages
+- Paginate data page
 - Add users via Admin page, users cannot create their own profile
 - Add instruction page
 - Clean up form for data material via dropdowns, categorize data
@@ -22,3 +22,7 @@ Key Requirements: An internal application for the certification deparment. This 
 #### Versions
 - ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
 - Rails 4.2.5
+- 
+
+1. devise_for, skip[:registrations]
+2. delete sign up in shared links, only forgot password and sign up
