@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
-  devise_for :users, skip: [:registrations]
   root to: 'static#home'
+  resources :specimen
+  
+  devise_for :users, skip: [:registrations]
+  as :user do
+    get 'admin/new', to: 'admin#new', as: 'admin_new'
+    post 'admin/create', to: 'admin#create', as: 'admin_create'
+  end
+  
+  devise_scope :user do 
+    get "/admin" => "admin#index"
+  end
   
   get '/data_entry', to: 'static#data_entry'
   get '/search', to: 'specimen#search'
-  get '/admin', to: 'admin#index'
-  
-  get '/create_user', to: 'admin#create_user'
-  
-  resources :specimen
 end
