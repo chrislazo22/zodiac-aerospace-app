@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   end
   
   devise_scope :user do 
-    get "/admin" => "admin#index"
+    get "/admin/dashoboard" => "admin#dashboard", as: 'admin_dashboard'
+    get '/admin', to: 'admin#index'
   end
   
   get '/data_entry', to: 'static#data_entry'
