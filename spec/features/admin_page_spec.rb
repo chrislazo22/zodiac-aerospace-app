@@ -4,7 +4,7 @@ describe 'admin page' do
   before do
     @user = User.create(email: "user@user.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "User", last_name: "1", admin: true)
     login_as(@user, :scope => :user)
-    visit admin_path
+    visit admin_dashboard_path
   end
   
   describe 'navigation' do 
@@ -13,7 +13,6 @@ describe 'admin page' do
     end
     
     it 'user can be created' do 
-      visit admin_path
       click_link ("Create User")
       
       fill_in 'user[first_name]', with: "first"
@@ -25,6 +24,17 @@ describe 'admin page' do
       click_on "Sign up"
       
       expect(page.status_code).to eq(200)
+    end
+  end
+  
+  describe 'index page' do
+    it 'can be reached successfully' do 
+      
+      click_on "All Users"
+      
+      visit admin_path
+      
+      expect(page).to have_content('First Name')
     end
   end
 end
