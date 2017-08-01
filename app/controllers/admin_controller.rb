@@ -11,7 +11,6 @@ class AdminController < Devise::RegistrationsController
   
   def create
     build_resource(sign_up_params)
-    binding.pry
     if resource.save
       redirect_to admin_path
     else

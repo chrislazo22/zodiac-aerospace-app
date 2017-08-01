@@ -12,12 +12,19 @@ describe 'admin page' do
       expect(page.status_code).to eq(200)
     end
     
-    it 'can create user' do 
-      click_on("Create User")
+    it 'user can be created' do 
+      visit admin_path
+      click_link ("Create User")
       
-      visit '/create_user'
+      fill_in 'user[first_name]', with: "first"
+      fill_in 'user[last_name]', with: "last"
+      fill_in 'user[email]', with: "user@user.com:"
+      fill_in 'user[password]', with: "asdfasdf"
+      fill_in 'user[password_confirmation]', with: "asdfasdf"
       
-      expect(page).to have_content("First Name")
+      click_on "Sign up"
+      
+      expect(page.status_code).to eq(200)
     end
   end
 end
