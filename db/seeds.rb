@@ -11,3 +11,11 @@
 end
 
 puts "100 items have been created"
+
+User.create!(email: "user@user.com", first_name: "user", last_name: "1", password: "asdfasdf", password_confirmation: "asdfasdf", admin: false)
+
+puts "created user"
+
+User.create!(email: "admin@admin.com", first_name: "admin", last_name: "1", password: "asdfasdf", password_confirmation: "asdfasdf", admin: true)
+
+puts "created admin user"
