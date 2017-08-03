@@ -7,6 +7,9 @@ class StaticController < ApplicationController
   def data_entry
   end
   
+  def instruction
+  end
+  
   private
   
   def authorize_admin

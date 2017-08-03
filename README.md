@@ -15,7 +15,7 @@ Key Requirements: An internal application for the certification deparment. This 
 - Model validations 
 - Index user page
 - Paginate data page
-- Add instruction page
+- Finish instruction page
 - Clean up form for data material via dropdowns, categorize data
 - Search page, add categories 
 - Row Numbers

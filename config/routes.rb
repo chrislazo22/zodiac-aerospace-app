@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   
   get '/data_entry', to: 'static#data_entry'
   get '/search', to: 'specimen#search'
+  get '/instructions', to: 'static#instruction'
 end
