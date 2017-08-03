@@ -11,7 +11,13 @@ RSpec.describe Speciman, type: :model do
     end
     
     it 'cannot be created with out proper criteria' do 
+      @speciman.test_plan = nil
       @speciman.cushion = nil
+      @speciman.seat_model = nil
+      @speciman.foam_a_material = nil
+      @speciman.foam_a_percent = nil
+      
+      binding.pry
       
       expect(@speciman).to_not be_valid
     end
