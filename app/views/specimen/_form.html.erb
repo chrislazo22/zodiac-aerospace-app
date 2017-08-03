@@ -1,56 +1,91 @@
 <%= form_for @specimen do |f| %>
-  <div>
-    <%= f.label :pass_or_fail %>
-    <%= f.text_field :pass_or_fail %>
-  </div>
-  <div>
-    <%= f.label :test_plan, "Test Plan" %>
-    <%= f.text_field :test_plan %>
-  </div>
-  <div>
-    <%= f.label :cushion %>
-    <%= f.text_field :cushion %>
-  </div>
-  <div>
-    <%= f.label :test_plan_id %>
-    <%= f.text_field :test_plan_id %>
-  </div>
-  <div>
-    <%= f.label :seat_model %>
-    <%= f.text_field :seat_model %>
-  </div>
-  <div>
-    <%= f.label :test_date %>
-    <%= f.date_select :test_date %>
-  </div>
-  <div>
-    <%= f.label :vert_burn_length_front %>
-    <%= f.text_field :vert_burn_length_front %>
-  </div>
-  <div>
-    <%= f.label :vert_burn_length_back %>
-    <%= f.text_field :vert_burn_length_back %>
-  </div>
-  <div>
-    <%= f.label :horiz_burn_length_top %>
-    <%= f.text_field :horiz_burn_length_top %>
-  </div>
-  <div>
-    <%= f.label :horiz_burn_length_bottom %>
-    <%= f.text_field :horiz_burn_length_bottom %>
-  </div>
-  <div>
-    <%= f.label :weight_loss_lbs %>
-    <%= f.text_field :weight_loss_lbs %>
-  </div>
-  <div>
-    <%= f.label :weight_loss_percent %>
-    <%= f.text_field :weight_loss_percent %>
-  </div>
-  <div>
-    <%= f.label :cover_config %>
-    <%= f.text_field :cover_config %>
-  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>General Information</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= f.label :pass_or_fail %></td>
+        <td><%= f.text_field :pass_or_fail %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :test_plan, "Test Plan" %></td>
+        <td><%= f.text_field :test_plan %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :cushion %></td>
+        <td><%= f.text_field :cushion %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :test_plan_id %></td>
+        <td><%= f.text_field :test_plan_id %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :seat_model %></td>
+        <td><%= f.text_field :seat_model %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :test_date %></td>
+        <td><%= f.date_select :test_date %></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Burn Length</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= f.label :vert_burn_length_front %></td>
+        <td><%= f.text_field :vert_burn_length_front %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :vert_burn_length_back %></td>
+        <td><%= f.text_field :vert_burn_length_back %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :horiz_burn_length_top %></td>
+        <td><%= f.text_field :horiz_burn_length_top %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :horiz_burn_length_bottom %></td>
+        <td><%= f.text_field :horiz_burn_length_bottom %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :weight_loss_lbs %></td>
+        <td><%= f.text_field :weight_loss_lbs %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :weight_loss_percent %></td>
+        <td><%= f.text_field :weight_loss_percent %></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Foam</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Foam A</td>
+        <td><%= f.text_field :vert_burn_length_front %></td>
+      </tr>
+      <tr>
+        <td>Foam B</td>
+        <td><%= f.text_field :foam_b_material %></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <div>
     <%= f.label :foam_a_material %>
     <%= f.text_field :foam_a_material %>
@@ -68,18 +103,6 @@
     <%= f.text_field :foam_c_material %>
     <%= f.label :foam_c_percent %>
     <%= f.number_field :foam_c_percent %>
-  </div>
-  <div>
-    <%= f.label :foam_d_material %>
-    <%= f.text_field :foam_d_material %>
-    <%= f.label :foam_d_percent %>
-    <%= f.number_field :foam_d_percent %>
-  </div>
-  <div>
-    <%= f.label :foam_e_material %>
-    <%= f.text_field :foam_e_material %>
-    <%= f.label :foam_e_percent %>
-    <%= f.number_field :foam_e_percent %>
   </div>
   <div>
     <%= f.label :decorative_insulation_part_number %>
@@ -132,6 +155,10 @@
   <div>
     <%= f.label :thermoplastic_mfr %>
     <%= f.text_field :thermoplastic_mfr %>
+  </div>
+  
+  <%= f.label :cover_config %>
+    <%= f.text_field :cover_config %>
   </div>
   
   <%= f.submit "Submit" %>

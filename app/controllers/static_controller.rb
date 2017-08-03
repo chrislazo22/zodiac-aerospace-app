@@ -7,7 +7,7 @@ class StaticController < ApplicationController
   def data_entry
   end
   
-  def instruction
+  def instructions
   end
   
   private
