@@ -12,7 +12,7 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Model validations 
+- Model validations, messages
 - Paginate data page
 - Finish instruction page
 - Clean up form for data material via dropdowns, categorize data
