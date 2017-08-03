@@ -21,7 +21,7 @@ describe 'admin page' do
       fill_in 'user[password]', with: "asdfasdf"
       fill_in 'user[password_confirmation]', with: "asdfasdf"
       
-      click_on "Sign up"
+      click_on "Create User"
       
       expect(page.status_code).to eq(200)
     end

@@ -57,11 +57,11 @@ describe 'data entry page' do
     it 'allows admin to edit the material page' do 
       visit edit_speciman_path(@speciman)
       
-      fill_in 'speciman[test_plan]', with: "4FR4132-00"
+      fill_in 'speciman[test_plan]', with: "4FR4132-12-FA1"
       click_on "Submit"
       
       visit specimen_path
-      expect(page).to have_content("4FR4132-00")
+      expect(page).to have_content("4FR4132-12-FA1")
     end
   end
   
