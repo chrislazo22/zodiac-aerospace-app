@@ -1,12 +1,16 @@
 class AdminController < Devise::RegistrationsController
   before_filter :authorize_admin, only: [:create, :index, :new]
   skip_before_filter :require_no_authentication, only: [:new, :create]
+  before_action :set_user, only: [:show]
   
   def dashboard
   end
   
   def index
     @user = User.all
+  end
+  
+  def show
   end
   
   def new
@@ -26,6 +30,10 @@ class AdminController < Devise::RegistrationsController
   def authorize_admin
     return unless !current_user.admin?
     redirect_to root_path, alert: 'Admin only!'
+  end
+  
+  def set_user
+    @user = User.find(params[:id])
   end
   
   def sign_up_params

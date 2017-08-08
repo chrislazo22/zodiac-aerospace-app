@@ -12,7 +12,7 @@ describe 'admin page' do
       expect(page.status_code).to eq(200)
     end
     
-    it 'user can be created' do 
+    it 'can be created' do 
       click_link ("Create User")
       
       fill_in 'user[first_name]', with: "first"
@@ -24,6 +24,15 @@ describe 'admin page' do
       click_on "Create User"
       
       expect(page.status_code).to eq(200)
+    end
+    
+    it 'can be edited' do 
+      visit admin_path
+      
+      click_link("user[first_name]")
+      
+      expect(page).to have_content("First Name")
+      click_link ("Edit User")
     end
   end
   

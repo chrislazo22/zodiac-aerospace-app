@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   devise_scope :user do 
     get "/admin/dashoboard" => "admin#dashboard", as: 'admin_dashboard'
     get '/admin', to: 'admin#index'
+    get 'user/:id', to: 'admin#show', as: 'user'
   end
   
   get '/data_entry', to: 'static#data_entry'
