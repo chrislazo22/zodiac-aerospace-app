@@ -12,13 +12,13 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
+- Ability to delete/edit users
 - Model validations, messages
 - Paginate data page
 - Finish instruction page
 - Clean up form for data material via dropdowns, categorize data
 - Search page, add categories 
 - Row Numbers
-- Ability to delete/edit users
 - Seearch by multiple criteria 
 - Foam ranges 
 - Export excel data
