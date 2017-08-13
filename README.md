@@ -12,7 +12,6 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Add new material page 
 - Ability to delete/edit users
 - Model validations, messages
 - Paginate data page
