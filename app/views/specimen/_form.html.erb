@@ -1,163 +1,155 @@
 <%= form_for @specimen do |f| %>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>General Information</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><%= f.label :pass_or_fail %></td>
-        <td><%= f.text_field :pass_or_fail %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :test_plan, "Test Plan" %></td>
-        <td><%= f.text_field :test_plan %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :cushion %></td>
-        <td><%= f.text_field :cushion %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :test_plan_id %></td>
-        <td><%= f.text_field :test_plan_id %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :seat_model %></td>
-        <td><%= f.text_field :seat_model %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :test_date %></td>
-        <td><%= f.date_select :test_date %></td>
-      </tr>
-    </tbody>
-  </table>
+<h4>General Information</h4>
+
+  <div class="field">
+    <%= f.label :pass_or_fail %><br />
+    <%= f.text_field :pass_or_fail %>
+  </div>
   
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Burn Length</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><%= f.label :vert_burn_length_front %></td>
-        <td><%= f.text_field :vert_burn_length_front %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :vert_burn_length_back %></td>
-        <td><%= f.text_field :vert_burn_length_back %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :horiz_burn_length_top %></td>
-        <td><%= f.text_field :horiz_burn_length_top %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :horiz_burn_length_bottom %></td>
-        <td><%= f.text_field :horiz_burn_length_bottom %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :weight_loss_lbs %></td>
-        <td><%= f.text_field :weight_loss_lbs %></td>
-      </tr>
-      <tr>
-        <td><%= f.label :weight_loss_percent %></td>
-        <td><%= f.text_field :weight_loss_percent %></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="field">
+    <%= f.label :test_plan, "Test Plan" %><br />
+    <%= f.text_field :test_plan %>
+  </div>
   
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Foam</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Foam A</td>
-        <td><%= f.text_field :vert_burn_length_front %></td>
-      </tr>
-      <tr>
-        <td>Foam B</td>
-        <td><%= f.text_field :foam_b_material %></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="field">
+    <%= f.label :cushion %><br />
+    <%= f.text_field :cushion %>
+  </div>
   
+  <div class="field">
+    <%= f.label :test_plan_id %><br />
+    <%= f.text_field :test_plan_id %>
+  </div>
   
-  <div>
-    <%= f.label :foam_a_material %>
-    <%= f.text_field :foam_a_material %>
-    <%= f.label :foam_a_percent %>
+  <div class="field">
+    <%= f.label :seat_model %><br />
+    <%= f.text_field :seat_model %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :test_date %><br />
+    <%= f.date_select :test_date %>
+  </div> <br / >
+  
+<h4>Fireblock Specifications</h4> 
+  
+  <div class="field">
+    <%= f.label :vert_burn_length_front %><br />
+    <%= f.text_field :vert_burn_length_front %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :vert_burn_length_back %><br />
+    <%= f.text_field :vert_burn_length_back %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :horiz_burn_length_top %><br />
+    <%= f.text_field :horiz_burn_length_top %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :horiz_burn_length_bottom %><br />
+    <%= f.text_field :horiz_burn_length_bottom %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :weight_loss_lbs %><br />
+    <%= f.text_field :weight_loss_lbs %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :weight_loss_percent %><br />
+    <%= f.text_field :weight_loss_percent %>
+  </div>
+  
+<h4>Fireblock Specifications</h4> 
+  <div class="field">
+    <%= f.label :foam_a_material %><br />
+    <%= f.text_field :foam_a_material %><br />
     <%= f.number_field :foam_a_percent %>
   </div>
-  <div>
-    <%= f.label :foam_b_material %>
-    <%= f.text_field :foam_b_material %>
-    <%= f.label :foam_b_percent %>
+  
+  <div class="field">
+    <%= f.label :foam_b_material %><br />
+    <%= f.text_field :foam_b_material %><br />
     <%= f.number_field :foam_b_percent %>
   </div>
-  <div>
-    <%= f.label :foam_c_material %>
-    <%= f.text_field :foam_c_material %>
-    <%= f.label :foam_c_percent %>
+  
+  <div class="field">
+    <%= f.label :foam_b_material %><br />
+    <%= f.text_field :foam_b_material %><br />
+    <%= f.number_field :foam_b_percent %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :foam_c_material %><br />
+    <%= f.text_field :foam_c_material %><br />
     <%= f.number_field :foam_c_percent %>
   </div>
-  <div>
-    <%= f.label :decorative_insulation_part_number %>
+  
+  <div class="field">
+    <%= f.label :decorative_insulation_part_number %><br />
     <%= f.text_field :decorative_insulation_part_number %>
   </div>
-  <div>
-    <%= f.label :decorative_insulation_mfr %>
-    <%= f.text_field :decorative_insulation_mfr %>
-  </div>
-  <div>
-    <%= f.label :backing %>
+  
+  <div <div class="field">
+    <%= f.label :backing %><br />
     <%= f.text_field :backing %>
   </div>
-  <div>
-    <%= f.label :adhesive_one %>
+  
+  <div class="field">
+    <%= f.label :adhesive_one %><br />
     <%= f.text_field :adhesive_one %>
   </div>
-  <div>
-    <%= f.label :adhesive_two %>
+  
+  <div <div class="field">
+    <%= f.label :adhesive_two %><br />
     <%= f.text_field :adhesive_two %>
   </div>
-  <div>
-    <%= f.label :fireblock_type %>
+  
+  <div <div class="field">
+    <%= f.label :fireblock_type %><br />
     <%= f.text_field :fireblock_type %>
   </div>
-  <div>
-    <%= f.label :fireblock_part_number %>
+  
+  <div <div class="field">
+    <%= f.label :fireblock_part_number %><br />
     <%= f.text_field :fireblock_part_number %>
   </div>
-  <div>
-    <%= f.label :fireblock_color %>
+  
+  <div <div class="field">
+    <%= f.label :fireblock_color %><br />
     <%= f.text_field :fireblock_color %>
   </div>
-  <div>
-    <%= f.label :fireblock_mfr %>
+  
+  <div <div class="field">
+    <%= f.label :fireblock_mfr %><br />
     <%= f.text_field :fireblock_mfr %>
   </div>
-  <div>
-    <%= f.label :flame_treatment %>
+  
+  <div <div class="field">
+    <%= f.label :flame_treatment %><br />
     <%= f.text_field :flame_treatment %>
   </div>
-  <div>
-    <%= f.label :fireblock_percent %>
+  
+  <div <div class="field">
+    <%= f.label :fireblock_percent %><br />
     <%= f.text_field :fireblock_percent %>
   </div>
-  <div>
-    <%= f.label :thermoplastic_part_number %>
+  
+  <div <div class="field">
+    <%= f.label :thermoplastic_part_number %><br />
     <%= f.text_field :thermoplastic_part_number %>
   </div>
-  <div>
-    <%= f.label :thermoplastic_mfr %>
+  
+  <div <div class="field">
+    <%= f.label :thermoplastic_mfr %><br />
     <%= f.text_field :thermoplastic_mfr %>
   </div>
   
-  <%= f.label :cover_config %>
+  <div <div class="field">
+    <%= f.label :cover_config %><br />
     <%= f.text_field :cover_config %>
   </div>
   

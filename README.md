@@ -12,6 +12,7 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
+- Add new material page 
 - Ability to delete/edit users
 - Model validations, messages
 - Paginate data page
@@ -19,7 +20,7 @@ Key Requirements: An internal application for the certification deparment. This 
 - Clean up form for data material via dropdowns, categorize data
 - Search page, add categories 
 - Row Numbers
-- Seearch by multiple criteria 
+- Search by multiple criteria 
 - Foam ranges 
 - Export excel data
 
