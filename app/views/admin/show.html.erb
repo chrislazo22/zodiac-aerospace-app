@@ -1,1 +1,26 @@
-hello
+<table class="table">
+	<tbody>
+		<tr>
+			<td><b>First Name: </b></td>
+			<td><%= @user.first_name %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Last Name: </b></td>
+			<td><%= @user.last_name %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Email: </b></td>
+			<td><%= @user.email %></td>
+		</tr>
+		
+		<tr>
+			<td><b>Admin: </b></td>
+			<td><%= @user.admin? %></td>
+		</tr>
+	</tbody>
+</table>
+		
+		
+	
