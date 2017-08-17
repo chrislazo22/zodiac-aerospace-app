@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get "/admin/dashoboard" => "admin#dashboard", as: 'admin_dashboard'
     get '/admin', to: 'admin#index'
     get 'user/:id', to: 'admin#show', as: 'user'
+    post 'admin/:id', to: 'admin#destroy'
   end
   
   get '/data_entry', to: 'static#data_entry'

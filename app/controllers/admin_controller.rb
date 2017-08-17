@@ -1,7 +1,7 @@
 class AdminController < Devise::RegistrationsController
   before_filter :authorize_admin, only: [:create, :index, :new]
   skip_before_filter :require_no_authentication, only: [:new, :create]
-  before_action :set_user, only: [:show]
+  before_action :set_user, only: [:show, :destroy]
   
   def dashboard
   end
@@ -25,6 +25,12 @@ class AdminController < Devise::RegistrationsController
       redirect_to root_path
     end
   end
+  
+  def destroy
+    @user.destroy
+    redirect_to admin_path, notice: "The user was deleted"
+  end
+  
   
   private
   def authorize_admin
