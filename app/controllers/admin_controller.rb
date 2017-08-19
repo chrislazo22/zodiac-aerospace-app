@@ -7,7 +7,7 @@ class AdminController < Devise::RegistrationsController
   end
   
   def index
-    @user = User.all
+    @user = User.order("first_name").page(params[:page])
   end
   
   def show

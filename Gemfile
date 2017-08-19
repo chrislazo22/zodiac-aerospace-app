@@ -27,3 +27,4 @@ end
 gem 'devise', '~> 4.2'
 gem 'pry-rails', group: [:development, :test]
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'will_paginate', '~> 3.1.0'
