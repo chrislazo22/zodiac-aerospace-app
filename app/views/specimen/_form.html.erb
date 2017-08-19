@@ -1,47 +1,43 @@
 <%= form_for @specimen do |f| %>
-<h4>General Information</h4>
+<div class="panel-group" id="panel-556763">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			 <a class="panel-title" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-353708">General Information</a>
+		</div>
+		<div id="panel-element-353708" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <%= f.label :pass_or_fail %><br>
+        <%= f.text_field :pass_or_fail %><br>
+      
+        <%= f.label :test_plan, "Test Plan" %><br>
+        <%= f.text_field :test_plan %><br>
+        
+        <%= f.label :cushion %><br>
+        <%= f.text_field :cushion %><br>
+        
+        <%= f.label :test_plan_id %><br>
+        <%= f.text_field :test_plan_id %><br>
+        
+        <%= f.label :seat_model %><br>
+        <%= f.text_field :seat_model %><br>
+        
+        <%= f.label :test_date %><br>
+        <%= f.date_select :test_date %><br>
+      </div>
+    </div>
+    <div class="panel-heading">
+			 <a class="panel-title" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-353708">Fireblock Specifications</a>
+		</div>
+		<div id="panel-element-353708" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <%= f.label :vert_burn_length_front %><br>
+        <%= f.text_field :vert_burn_length_front %><br>
+        
+        <%= f.label :vert_burn_length_back %><br>
+    <%= f.text_field :vert_burn_length_back %><br>
+  </div>
+</div>
 
-  <div class="field">
-    <%= f.label :pass_or_fail %><br />
-    <%= f.text_field :pass_or_fail %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :test_plan, "Test Plan" %><br />
-    <%= f.text_field :test_plan %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :cushion %><br />
-    <%= f.text_field :cushion %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :test_plan_id %><br />
-    <%= f.text_field :test_plan_id %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :seat_model %><br />
-    <%= f.text_field :seat_model %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :test_date %><br />
-    <%= f.date_select :test_date %>
-  </div> <br / >
-  
-<h4>Fireblock Specifications</h4> 
-  
-  <div class="field">
-    <%= f.label :vert_burn_length_front %><br />
-    <%= f.text_field :vert_burn_length_front %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :vert_burn_length_back %><br />
-    <%= f.text_field :vert_burn_length_back %>
-  </div>
   
   <div class="field">
     <%= f.label :horiz_burn_length_top %><br />
@@ -155,3 +151,26 @@
   
   <%= f.submit "Submit" %>
 <% end %>
+
+			<div class="panel-group" id="panel-556763">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-353708">Collapsible Group Item #1</a>
+					</div>
+					<div id="panel-element-353708" class="panel-collapse collapse in">
+						<div class="panel-body">
+							Anim pariatur cliche...
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-193096">Collapsible Group Item #2</a>
+					</div>
+					<div id="panel-element-193096" class="panel-collapse collapse">
+						<div class="panel-body">
+							Anim pariatur cliche...
+						</div>
+					</div>
+				</div>
+	
