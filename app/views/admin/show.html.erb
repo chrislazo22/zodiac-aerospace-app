@@ -22,7 +22,7 @@
 	</tbody>
 </table>
 
-<%= link_to "Delete User", admin_path(@user), method: :destroy, data: { confirm: "Are you sure?"}%>
+<%= link_to "Delete User", admin_destroy_user_path(@user), method: :delete, data: { confirm: "Are you sure?"} %>
 		
 		
 	
