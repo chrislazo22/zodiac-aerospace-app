@@ -12,16 +12,15 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Ability to delete/edit users and materials
 - Model validations, messages
 - Paginate data page
-- Finish instruction page
 - Clean up form for data material via dropdowns, categorize data
 - Search page, add categories 
 - Row Numbers
 - Search by multiple criteria 
 - Foam ranges 
 - Export excel data
+- Finish instruction page
 
 #### Versions
 - ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]

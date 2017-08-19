@@ -1,5 +1,5 @@
 class AdminController < Devise::RegistrationsController
-  before_filter :authorize_admin, only: [:create, :index, :new]
+  before_filter :authorize_admin, only: [:create, :index, :new, :dashboard]
   skip_before_filter :require_no_authentication, only: [:new, :create]
   before_action :set_user, only: [:show, :destroy]
   
