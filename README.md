@@ -12,7 +12,7 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Ability to delete/edit users
+- Ability to delete/edit users and materials
 - Model validations, messages
 - Paginate data page
 - Finish instruction page
