@@ -1,5 +1,5 @@
 class SpecimenController < ApplicationController
-before_action :set_specimen, only: [:show, :edit, :update] 
+before_action :set_specimen, only: [:show, :edit, :update, :destroy] 
 
   def index
     @specimen = Speciman.all
@@ -33,6 +33,11 @@ before_action :set_specimen, only: [:show, :edit, :update]
     else
       render action: 'edit'
     end
+  end
+  
+  def destroy
+    @specimen.destroy
+    redirect_to specimen_path, notice: "The material was deleted"
   end
   
   def search
