@@ -25,152 +25,107 @@
         <%= f.date_select :test_date %><br>
       </div>
     </div>
+  </div>
+  <div class="panel panel-default">
     <div class="panel-heading">
-			 <a class="panel-title" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-353708">Fireblock Specifications</a>
+			 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-193096">Test Specifications</a>
 		</div>
-		<div id="panel-element-353708" class="panel-collapse collapse in">
+		<div id="panel-element-193096" class="panel-collapse collapse">
       <div class="panel-body">
         <%= f.label :vert_burn_length_front %><br>
         <%= f.text_field :vert_burn_length_front %><br>
         
         <%= f.label :vert_burn_length_back %><br>
-    <%= f.text_field :vert_burn_length_back %><br>
+        <%= f.text_field :vert_burn_length_back %><br>
+        
+        <%= f.label :horiz_burn_length_top %><br>
+        <%= f.text_field :horiz_burn_length_top %><br>
+    
+        <%= f.label :horiz_burn_length_bottom %><br>
+        <%= f.text_field :horiz_burn_length_bottom %><br>
+        
+        <%= f.label :weight_loss_lbs %><br>
+        <%= f.text_field :weight_loss_lbs %><br>
+        
+        <%= f.label :weight_loss_percent %><br>
+      <%= f.text_field :weight_loss_percent %><br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+			 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-19309">Foam Information</a>
+		</div>
+		<div id="panel-element-19309" class="panel-collapse collapse">
+      <div class="panel-body">
+        <%= f.label :foam_a_material %><br>
+        <%= f.text_field :foam_a_material %><br>
+        <%= f.number_field :foam_a_percent %><br>
+        
+        <%= f.label :foam_b_material %><br>
+        <%= f.text_field :foam_b_material %><br>
+        <%= f.number_field :foam_b_percent %><br>
+        
+        <%= f.label :foam_b_material %><br>
+        <%= f.text_field :foam_b_material %><br>
+        <%= f.number_field :foam_b_percent %><br>
+        
+        <%= f.label :foam_c_material %><br>
+        <%= f.text_field :foam_c_material %><br>
+        <%= f.number_field :foam_c_percent %><br>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+			 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-1930">Other</a>
+		</div>
+		<div id="panel-element-1930" class="panel-collapse collapse">
+      <div class="panel-body">
+        <%= f.label :decorative_insulation_part_number %><br>
+        <%= f.text_field :decorative_insulation_part_number %><br>
+        
+        <%= f.label :backing %><br>
+        <%= f.text_field :backing %><br>
+        
+        <%= f.label :adhesive_one %><br>
+        <%= f.text_field :adhesive_one %><br>
+        
+        <%= f.label :adhesive_one %><br>
+        <%= f.text_field :adhesive_one %><br>
+        
+        <%= f.label :adhesive_two %><br>
+        <%= f.text_field :adhesive_two %><br>
+        
+        <%= f.label :fireblock_type %><br>
+        <%= f.text_field :fireblock_type %><br>
+        
+        <%= f.label :fireblock_part_number %><br>
+        <%= f.text_field :fireblock_part_number %><br>
+        
+        <%= f.label :fireblock_color %><br>
+        <%= f.text_field :fireblock_color %><br>
+        
+        <%= f.label :fireblock_mfr %><br>
+        <%= f.text_field :fireblock_mfr %><br>
+        
+        <%= f.label :flame_treatment %><br>
+        <%= f.text_field :flame_treatment %><br>
+        
+        <%= f.label :fireblock_percent %><br />
+        <%= f.text_field :fireblock_percent %><br>
+        
+        <%= f.label :thermoplastic_part_number %><br>
+        <%= f.text_field :thermoplastic_part_number %><br>
+        
+        <%= f.label :thermoplastic_mfr %><br>
+        <%= f.text_field :thermoplastic_mfr %><br>
+        
+        <%= f.label :cover_config %><br>
+        <%= f.text_field :cover_config %><br>
+      </div>
+    </div>
   </div>
 </div>
-
-  
-  <div class="field">
-    <%= f.label :horiz_burn_length_top %><br />
-    <%= f.text_field :horiz_burn_length_top %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :horiz_burn_length_bottom %><br />
-    <%= f.text_field :horiz_burn_length_bottom %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :weight_loss_lbs %><br />
-    <%= f.text_field :weight_loss_lbs %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :weight_loss_percent %><br />
-    <%= f.text_field :weight_loss_percent %>
-  </div>
-  
-<h4>Fireblock Specifications</h4> 
-  <div class="field">
-    <%= f.label :foam_a_material %><br />
-    <%= f.text_field :foam_a_material %><br />
-    <%= f.number_field :foam_a_percent %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :foam_b_material %><br />
-    <%= f.text_field :foam_b_material %><br />
-    <%= f.number_field :foam_b_percent %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :foam_b_material %><br />
-    <%= f.text_field :foam_b_material %><br />
-    <%= f.number_field :foam_b_percent %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :foam_c_material %><br />
-    <%= f.text_field :foam_c_material %><br />
-    <%= f.number_field :foam_c_percent %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :decorative_insulation_part_number %><br />
-    <%= f.text_field :decorative_insulation_part_number %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :backing %><br />
-    <%= f.text_field :backing %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :adhesive_one %><br />
-    <%= f.text_field :adhesive_one %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :adhesive_two %><br />
-    <%= f.text_field :adhesive_two %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :fireblock_type %><br />
-    <%= f.text_field :fireblock_type %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :fireblock_part_number %><br />
-    <%= f.text_field :fireblock_part_number %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :fireblock_color %><br />
-    <%= f.text_field :fireblock_color %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :fireblock_mfr %><br />
-    <%= f.text_field :fireblock_mfr %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :flame_treatment %><br />
-    <%= f.text_field :flame_treatment %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :fireblock_percent %><br />
-    <%= f.text_field :fireblock_percent %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :thermoplastic_part_number %><br />
-    <%= f.text_field :thermoplastic_part_number %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :thermoplastic_mfr %><br />
-    <%= f.text_field :thermoplastic_mfr %>
-  </div>
-  
-  <div <div class="field">
-    <%= f.label :cover_config %><br />
-    <%= f.text_field :cover_config %>
-  </div>
-  
-  <%= f.submit "Submit" %>
+<%= f.submit "Submit" %>
 <% end %>
-
-			<div class="panel-group" id="panel-556763">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-353708">Collapsible Group Item #1</a>
-					</div>
-					<div id="panel-element-353708" class="panel-collapse collapse in">
-						<div class="panel-body">
-							Anim pariatur cliche...
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-556763" href="#panel-element-193096">Collapsible Group Item #2</a>
-					</div>
-					<div id="panel-element-193096" class="panel-collapse collapse">
-						<div class="panel-body">
-							Anim pariatur cliche...
-						</div>
-					</div>
-				</div>
-	

@@ -12,7 +12,6 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Clean up form for data material via dropdowns, categorize data
 - Model validations, messages
 - Search page, add categories 
 - Row Numbers
