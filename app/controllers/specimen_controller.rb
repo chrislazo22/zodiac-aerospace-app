@@ -2,7 +2,7 @@ class SpecimenController < ApplicationController
 before_action :set_specimen, only: [:show, :edit, :update, :destroy] 
 
   def index
-    @specimen = Speciman
+    @specimen = Speciman.all
     if params[:search]
       @specimen = Speciman.search(params[:search]).page(params[:page]).per_page(20)
     end
