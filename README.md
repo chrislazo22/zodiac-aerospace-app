@@ -12,13 +12,12 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Model validations, messages
-- Search page, add categories 
+- Model validations, messages, split validations per attr
+- Seed data
+- Search page, add categories, search by multiple criteria, foam ranges  
 - Row Numbers
-- Search by multiple criteria 
-- Foam ranges 
 - Export excel data
-- Finish instruction page
+- Instruction page
 
 #### Versions
 - ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
