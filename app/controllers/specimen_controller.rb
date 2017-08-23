@@ -23,6 +23,7 @@ before_action :set_specimen, only: [:show, :edit, :update, :destroy]
     if @specimen.save
       redirect_to @specimen, notice: 'The material was added successfully'
     else
+      flash[:notice] = @specimen.errors.full_messages.to_sentence
       render :new
     end
   end

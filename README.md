@@ -12,7 +12,8 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Model validations, messages, split validations per attr
+- Error messages
+- Fix pagination
 - Seed data
 - Search page, add categories, search by multiple criteria, foam ranges  
 - Row Numbers
