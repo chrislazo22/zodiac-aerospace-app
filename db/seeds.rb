@@ -8,17 +8,17 @@ puts "created admin user"
 
 require 'csv'
 
-csv_text = File.read(Rails.root.join('lib', 'seeds', 'fireblocking_data_test.csv'))
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'fireblocking_data.csv'))
 csv = CSV.parse(csv_text, headers: true, encoding: 'ISO-8859-1')
 csv.each do |row|
-  workout_hash = row.to_hash
-  workout = Workout.where(id: workout_hash["id"])
+  data_hash = row.to_hash
+  data = Speciman.where(id: data_hash["id"])
 
-  if workout.count == 1
-    workout.first.update_attributes.(workout_hash)
+  if data.count == 1
+    data.first.update_attributes.(workout_hash)
   else
-    Workout.create!(workout_hash)
+    Speciman.create!(data_hash)
   end
 end
 
-puts "#{Workout.count}"
+puts "#{Speciman.count}"
