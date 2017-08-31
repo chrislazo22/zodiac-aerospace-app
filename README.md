@@ -12,9 +12,8 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Fix pagination
 - Search page, add categories, search by multiple criteria, foam ranges  
-- Row Numbers
+- Fix pagination: back function does not include search and fix page buttons
 - Export excel data
 - Instruction page
 
