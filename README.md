@@ -12,10 +12,7 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Import CSV data (check encoding)
-- Error messages
 - Fix pagination
-- Seed data
 - Search page, add categories, search by multiple criteria, foam ranges  
 - Row Numbers
 - Export excel data
