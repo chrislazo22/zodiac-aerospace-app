@@ -8,7 +8,7 @@ puts "created admin user"
 
 require 'csv'
 
-csv_text = File.read(Rails.root.join('lib', 'seeds', 'fireblocking_data.csv'))
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'fireblocking_data.csv'), encoding: 'iso-8859-1:utf-8')
 csv = CSV.parse(csv_text, headers: true)
 csv.each do |row|
   data_hash = row.to_hash
