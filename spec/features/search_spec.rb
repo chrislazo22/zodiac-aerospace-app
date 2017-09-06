@@ -1,23 +1,32 @@
 require 'rails_helper'
 
-describe 'search bar' do
+describe 'search' do
   before do
     @user = User.create(email: "user@user.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "User", last_name: "1", admin: true)
     login_as(@user, :scope => :user)
     visit admin_dashboard_path
   end
   
-  it 'simple search page can be found' do 
-    visit '/search'
+  describe 'simple serach' do 
     
-    expect(page.status_code).to eq(200)
+    it 'simple search page can be found' do 
+      visit '/search'
+      
+      expect(page.status_code).to eq(200)
+    end
+    
+    it 'has link to advanced search' do 
+      visit simple_search_path
+      
+      expect(page).to have_content("Advanced Search")
+    end
   end
   
-  it 'has link to advanced search' do 
-    visit simple_search_path
-    
-    click_link "Advanced Search"
-    
-    expect(page.status_code).to eq(200)
+  describe 'advanced search function' do 
+    it 'advanced search can be reached' do 
+      visit new_search_path
+      
+      expect(page.status_code).to eq(200)
+    end
   end
 end

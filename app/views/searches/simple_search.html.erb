@@ -3,10 +3,13 @@
   <%= submit_tag "Search", :name => nil %>
 <% end %>
 
-<% if current_user.admin == false %>
-  <%= link_to "Back", root_path %>
-<% else %>
-  <%= link_to "Back", data_entry_path %>
-<% end %>
+<p><%= link_to "Advanced Search", new_search_path %></p>
+<p>
+  <% if current_user.admin == false %>
+    <%= link_to "Back", root_path %>
+  <% else %>
+    <%= link_to "Back", data_entry_path %>
+  <% end %>
+</p>
 
   
