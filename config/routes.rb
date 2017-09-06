@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'static#home'
   resources :specimen
+  resources :searches
   
   devise_for :users, skip: [:registrations]
   as :user do
@@ -16,6 +17,6 @@ Rails.application.routes.draw do
   end
   
   get '/data_entry', to: 'static#data_entry'
-  get '/search', to: 'specimen#search'
+  get '/search', to: 'searches#simple_search', as: 'simple_search'
   get '/instructions', to: 'static#instructions'
 end

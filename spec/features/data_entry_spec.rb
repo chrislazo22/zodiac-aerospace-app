@@ -75,7 +75,7 @@ describe 'data entry page' do
   
   describe 'search function' do
     before do 
-      visit search_path
+      visit simple_search_path
     end
     
     it 'has a search bar' do

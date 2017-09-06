@@ -42,9 +42,6 @@ before_action :set_specimen, only: [:show, :edit, :update, :destroy]
     redirect_to specimen_path, notice: "Material was deleted"
   end
   
-  def search
-  end
-  
   private 
 
   def set_specimen
