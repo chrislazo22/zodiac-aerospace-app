@@ -14,8 +14,10 @@ Key Requirements: An internal application for the certification deparment. This 
 ### Next Step(s)
 - Search page, add categories, search by multiple criteria, foam ranges  
 - Fix pagination: back function does not include search and fix page buttons
-- Export excel data
+- Export excel data, specific catergories to excel 
+- Link PDF test data sheets to company server
 - Instruction page
+- Deploy
 
 #### Versions
 - ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
