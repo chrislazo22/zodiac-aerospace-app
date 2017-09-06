@@ -28,5 +28,14 @@ describe 'search' do
       
       expect(page.status_code).to eq(200)
     end
+    
+    it 'outputs a value' do 
+      visit new_search_path
+      
+      fill_in 'speciman[test_plan]', with: "4FR4114-12"
+      click_button('Search')
+      
+      expect(page).to have_content("4FR4114-12")
+    end
   end
 end

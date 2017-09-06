@@ -17,6 +17,7 @@ Key Requirements: An internal application for the certification deparment. This 
 - Export excel data, specific catergories to excel 
 - Link PDF test data sheets to company server
 - Instruction page
+- -Remove search spec from data_rntry spec
 - Deploy
 
 #### Versions

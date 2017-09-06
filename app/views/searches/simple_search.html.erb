@@ -4,6 +4,7 @@
 <% end %>
 
 <p><%= link_to "Advanced Search", new_search_path %></p>
+
 <p>
   <% if current_user.admin == false %>
     <%= link_to "Back", root_path %>

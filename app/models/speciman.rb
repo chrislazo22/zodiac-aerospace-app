@@ -1,4 +1,5 @@
 class Speciman < ActiveRecord::Base
+  
   validates :test_plan, presence: true
   validates :cushion, presence: true
   validates :seat_model, presence: true
