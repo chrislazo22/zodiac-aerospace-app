@@ -2,10 +2,23 @@
 
 <%= form_for @search do |f| %>
   <div class="field">
-    <%= f.label :test_plan_search %><br />
+    <%= f.label :test_plan_search, "Test Plan" %><br />
     <%= f.text_field :test_plan_search %>
   </div>
-  <div class="actions">
-    <%= f.submit "Search" %>
+  
+  <div class="field">
+    <%= f.label :cushion_search, "Cushion" %><br />
+    <%= f.text_field :cushion_search %>
   </div>
+  
+  <div class="field">
+    <%= f.label :seat_model_search, "Seat Model" %><br />
+    <%= f.text_field :seat_model_search %>
+  </div>
+  
+  <div class="actions">
+    <br><%= f.submit "Search" %>
+  </div>
+  
+  <br><%= link_to "Back", simple_search_path %>
 <% end %>

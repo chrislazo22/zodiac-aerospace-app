@@ -9,7 +9,8 @@ class Search < ActiveRecord::Base
   
   def find_specimen
     specimen = Speciman.order(:test_plan)
-    specimen = specimen.where("test_plan like ?", "%#{test_plan_search}%") if test_plan_serach.present?
+    specimen = specimen.where("test_plan like ?", "%#{test_plan_search}%") if test_plan_search.present?
+    specimen = specimen.where("cushion like ?", "%#{cushion_search}%") if cushion_search.present?
     specimen
   end
 end

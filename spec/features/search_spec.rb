@@ -32,7 +32,7 @@ describe 'search' do
     it 'outputs a value' do 
       visit new_search_path
       
-      fill_in 'speciman[test_plan]', with: "4FR4114-12"
+      fill_in 'search[test_plan_search]', with: "4FR4114-12"
       click_button('Search')
       
       expect(page).to have_content("4FR4114-12")

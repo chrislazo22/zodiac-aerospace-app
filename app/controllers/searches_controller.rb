@@ -13,11 +13,13 @@ class SearchesController < ApplicationController
   end
   
   def show
+    @x = 0
+    
     @search = Search.find(params[:id])
   end
   
   private 
   def search_params
-    params.require(:search).permit(:test_plan_search)
+    params.require(:search).permit(:test_plan_search, :cushion_search, :seat_model_search)
   end
 end
