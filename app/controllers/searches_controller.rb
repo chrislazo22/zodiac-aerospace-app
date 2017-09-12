@@ -19,7 +19,8 @@ class SearchesController < ApplicationController
   end
   
   private 
+  
   def search_params
-    params.require(:search).permit(:test_plan_search, :cushion_search, :seat_model_search)
+    params.require(:search).permit(:test_plan_search, :cushion_search, :seat_model_search, :foam_a_material_search, :foam_b_material_search, :fireblock_type_search, :fireblock_part_number_search, :flame_treatment_search)
   end
 end
