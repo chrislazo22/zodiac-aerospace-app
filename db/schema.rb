@@ -17,11 +17,16 @@ ActiveRecord::Schema.define(version: 20170906175938) do
   enable_extension "plpgsql"
 
   create_table "searches", force: :cascade do |t|
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.string   "test_plan_search"
     t.string   "cushion_search"
     t.integer  "seat_model_search"
+    t.string   "foam_a_material_search"
+    t.string   "foam_b_material_search"
+    t.string   "fireblock_type_search"
+    t.string   "fireblock_part_number_search"
+    t.string   "flame_treatment_search"
   end
 
   create_table "specimen", force: :cascade do |t|

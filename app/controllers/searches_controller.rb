@@ -19,6 +19,7 @@ class SearchesController < ApplicationController
   end
   
   private 
+  
   def search_params
     params.require(:search).permit(:test_plan_search, :cushion_search, :seat_model_search)
   end
