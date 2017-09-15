@@ -12,7 +12,6 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Search page, add categories, search by multiple criteria, foam ranges  
 - Fix pagination: back function does not include search and fix page buttons
 - Export excel data, specific catergories to excel 
 - Link PDF test data sheets to company server
