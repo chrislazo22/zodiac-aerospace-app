@@ -14,6 +14,11 @@ before_action :set_specimen, only: [:show, :edit, :update, :destroy]
   end
   
   def show
+    respond_to do |format|
+    format.html
+    format.csv { send_data @specimen.to_csv }
+    format.xls # { send_data @specimen.to_csv(col_sep: "\t") }
+    end
   end
   
   def edit

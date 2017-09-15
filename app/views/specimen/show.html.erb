@@ -81,6 +81,11 @@
 <div>
   <%= link_to "Delete Material", speciman_path(@specimen), method: :delete, data: { confirm: "Are you sure?"} %>
 </div>
+<p>
+  Download:
+  <%= link_to "CSV", speciman_path(format: "csv") %> |
+  <%= link_to "Excel", speciman_path(format: "xls") %>
+</p>
 <div>
   <%= link_to "Back", specimen_path, method: :get %>
 </div>
