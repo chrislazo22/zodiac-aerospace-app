@@ -7,7 +7,6 @@ class Speciman < ActiveRecord::Base
   validates :foam_a_percent, presence: true
   validates :fireblock_part_number, presence: true
   
-  
   def self.search(search)
     where('test_plan LIKE ?', "%#{search}%")
   end

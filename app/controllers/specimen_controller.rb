@@ -6,7 +6,6 @@ before_action :set_specimen, only: [:show, :edit, :update, :destroy]
     if params[:search]
       @specimen = Speciman.search(params[:search]).page(params[:page]).per_page(25)
     end
-    
     @x = 0
   end
 

@@ -1,8 +1,4 @@
 class SearchesController < ApplicationController
-  
-  def simple_search
-  end
-  
   def new
     @search = Search.new
   end
@@ -13,9 +9,11 @@ class SearchesController < ApplicationController
   end
   
   def show
-    @x = 0
-    
     @search = Search.find(params[:id])
+    @x = 0
+  end
+  
+  def simple_search
   end
   
   private 
