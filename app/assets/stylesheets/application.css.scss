@@ -6,14 +6,21 @@ header {
   float: left;
 }
 
-header, .navbar {
-  display: inline;
+header li {
+  float: left;
+  display: lnline;
+}
+
+header #logo {
+  margin: 0;
+}
+
+headedr nav {
   float: right;
 }
 
 //NAVIGATION BAR//
-.navbar {
-}
+
 
 //GLOBAL//
 
