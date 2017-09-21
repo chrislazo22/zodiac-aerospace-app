@@ -1,0 +1,19 @@
+h2 {
+  margin-top:18%;
+  text-align: center;
+}
+
+p {
+  text-align:center;
+}
+
+.buttons {
+  text-align:center;
+}
+
+.button {
+  display:inline-block;
+  padding: 15px 25px 17px;
+  margin: 30px 20px auto 20px;
+  border: 1px solid;
+}
