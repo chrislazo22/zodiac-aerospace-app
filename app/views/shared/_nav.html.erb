@@ -1,24 +1,17 @@
-<% if current_user %>
-	<nav>
-		<ul class="nav-tabs">
-			<li>
-				<%= link_to "Home", root_path %>
-			</li>
-			<li>
-				<%= link_to "Instructions", instructions_path %>
-			</li>
-			<li class="dropdown pull-right">
-				 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Options<strong class="caret"></strong></a>
-				<ul class="dropdown-menu">
-					<li>
-						<%= link_to "Admin", admin_dashboard_path%>
-					</li>
-					<li>
-						<%= link_to "Logout", destroy_user_session_path, method: :delete %>
-					</li>
+<header>
+	<div class="container">
+		<div id="logo">
+			<img <%= image_tag 'logo' %>
+		</div>
+		<% if current_user %>
+			<nav>
+				<ul>
+					<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "Instructions", instructions_path %></li>
+					<li><%= link_to "Admin", admin_dashboard_path%></li>
+					<li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
 				</ul>
-			</li>
-		</ul>
-	</nav>
-<% end %>
-
+			</nav>
+		<% end %>
+	</div>
+</header>

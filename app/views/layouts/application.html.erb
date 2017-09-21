@@ -8,17 +8,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-		<header>
-			<div id="logo">
-				<%= image_tag('logo.jpg', width: "100px") %>
-			</div>
-			<%= render 'shared/nav' %>
-		</header>
-	  <%= yield %>
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>
-	</div>
+	<%= render 'shared/nav' %>
+  <%= yield %>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
 </body>
 </html>
 

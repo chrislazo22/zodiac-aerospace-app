@@ -1,32 +1,56 @@
+//BODY//
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  color:#000000;
+}
+
 //HEADER//
 
 header {
+  display:block;
   top: 0;
-  padding-top: 20px;
-  float: left;
-}
-
-header li {
-  float: left;
-  display: lnline;
+  border-bottom: 3px solid #000000;
 }
 
 header #logo {
-  margin: 0;
+  float:left;
 }
 
-headedr nav {
-  float: right;
+#logo img {
+  width: 300px;
 }
 
-//NAVIGATION BAR//
+nav ul {
+  font-size: 17px;
+  list-style:none;
+  margin-top:60px;
+  float:right;
+}
 
+header li {
+  float:left;
+  display: inline;
+  padding:3px 15px;
+}
 
-//GLOBAL//
+a {
+  text-decoration:none;
+  color:#000000;
+}
+
+a:hover {
+  color: #66a3ff;
+}
 
 .container {
   width: 75%;
   margin: auto;
   overflow: hidden;
 }
-
