@@ -1,9 +1,11 @@
-<%= form_tag(specimen_path, :method => 'get') do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Search" %>
-  <%= submit_tag "Search", :name => nil %>
-<% end %>
+<div class="form">
+  <%= form_tag(specimen_path, :method => 'get') do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search" %>
+    <%= submit_tag "Search", :name => nil %>
+  <% end %>
+</div>
 
-<p><%= link_to "Advanced Search", new_search_path %></p>
+<%= link_to "Advanced Search", new_search_path %>
 
 <p>
   <% if current_user.admin == false %>
