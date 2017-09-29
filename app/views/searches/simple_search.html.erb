@@ -9,11 +9,7 @@
     </div>
     <p>
       <%= link_to "Advanced Search", new_search_path %> |
-      <% if current_user.admin == false %>
         <%= link_to "Back", root_path %>
-      <% else %>
-        <%= link_to "Back", data_entry_path %>
-      <% end %>
     </p>
   </div>
 </div>
