@@ -1,4 +1,3 @@
-//BODY//
 /*
     *= require_self
     *= require static
@@ -8,56 +7,43 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-
   padding: 0;
   margin: 0;
   background-color: #ffffff;
-  color:#000000;
-}
-
-//HEADER//
+  color: #000000; }
 
 header {
-  display:block;
+  display: block;
   top: 0;
-  border-bottom: 3px solid #000000;
-}
+  border-bottom: 3px solid #000000; }
 
 header #logo {
-  float:left;
-}
+  float: left; }
 
 #logo img {
-  width: 300px;
-}
+  width: 300px; }
 
 nav ul {
   font-size: 17px;
-  list-style:none;
-  margin-top:60px;
-  float:right;
-}
+  list-style: none;
+  margin-top: 60px;
+  float: right; }
 
 header li {
-  float:left;
+  float: left;
   display: inline;
-  padding:3px 15px;
-}
-
-
-//GLOBAL//
+  padding: 3px 15px; }
 
 a {
-  text-decoration:none;
-  color:#000000;
-}
+  text-decoration: none;
+  color: #000000; }
 
 a:hover {
-  color: #66a3ff;
-}
+  color: #66a3ff; }
 
 .container {
   width: 75%;
   margin: auto;
-  overflow: hidden;
-}
+  overflow: hidden; }
+
+

@@ -1,18 +1,19 @@
-<div class="form">
-  <%= form_tag(specimen_path, :method => 'get') do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search" %>
-    <%= submit_tag "Search", :name => nil %>
-  <% end %>
+<div class="container">
+  <div class="box">
+    <h2>Simple Search</h2>
+    <div class="search-form">
+      <%= form_tag(specimen_path, :method => 'get', class: "search_form") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Test Report Number", class: "search-block" %>
+        <%= submit_tag "Search", :name => nil %>
+      <% end %>
+    </div>
+    <p>
+      <%= link_to "Advanced Search", new_search_path %> |
+      <% if current_user.admin == false %>
+        <%= link_to "Back", root_path %>
+      <% else %>
+        <%= link_to "Back", data_entry_path %>
+      <% end %>
+    </p>
+  </div>
 </div>
-
-<%= link_to "Advanced Search", new_search_path %>
-
-<p>
-  <% if current_user.admin == false %>
-    <%= link_to "Back", root_path %>
-  <% else %>
-    <%= link_to "Back", data_entry_path %>
-  <% end %>
-</p>
-
-  

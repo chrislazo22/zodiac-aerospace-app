@@ -3,6 +3,7 @@
 <head>
   <title>Zodiac Aerospace</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag params[:controller] %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <%= csrf_meta_tags %>
@@ -12,6 +13,11 @@
   <%= yield %>
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
+	<footer>
+  <p>
+    &copy Zodiac Aerospace | Zodiac Seats California
+  </p>
+  </footer>
 </body>
 </html>
 
