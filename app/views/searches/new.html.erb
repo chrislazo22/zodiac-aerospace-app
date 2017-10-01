@@ -1,6 +1,6 @@
 <div class="container">
   <div class="box">
-    <h3>Advanced Search</h3>
+    <h2>Advanced Search</h2>
     <%= form_for @search do |f| %>
       <div class="field">
         <%= f.label :test_plan_search, "Test Plan" %><br />
@@ -45,8 +45,7 @@
       <div class="actions">
         <br><%= f.submit "Search" %>
       </div>
-      
-      <br><%= link_to "Back", simple_search_path %>
     <% end %>
+    <%= link_to "Back", simple_search_path %>
   </div>
 </div>
