@@ -21,7 +21,7 @@ header {
   display:block;
   top: 0;
   border-bottom: 3px solid #000000;
-  margin-bottom:10px;
+  margin-bottom:20px;
 }
 
 header #logo {
@@ -43,6 +43,23 @@ header li {
   float:left;
   display: inline;
   padding:3px 15px;
+}
+
+//TABLES//
+table {
+  border-collapse:collapse;
+  width:100%;
+  margin:13px 0;
+}
+
+th, td {
+  padding: 8px;
+  text-align:left;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+tr:hover {
+  background-color:#cce0ff;
 }
 
 
@@ -84,7 +101,7 @@ a:hover {
     text-decoration: none;
     &:hover, &:focus {
       border-color: #003366;
-      background: #0063dc;
+      background: #66a3ff;
       color: white;
     }
   }
@@ -102,3 +119,7 @@ a:hover {
     margin-left: 1em
   }
 }
+
+//RESET//
+
+h2{margin:0};

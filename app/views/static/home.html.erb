@@ -1,26 +1,24 @@
 <section>
-	<div class="container">
-		<div class="welcome">
-			Welcome to the Zodiac Aerospace Fireblock Test Database
+	<div class="welcome">
+		Welcome to the Zodiac Aerospace Fireblock Test Database
+	</div>
+	<p>
+		This database contains flammability test configurations, 
+		materials, constructions, test results and related information 
+		for various Zodiac Aerospace programs.
+		The database maybe searched by general or specific test specimen
+		constructions and materials, specific document information
+		or material manufacturer by picking the applicable search button
+		below.
+	</p>
+	
+	<div class="buttons">
+		<div class="button">
+			<%= link_to "Search", simple_search_path %>
 		</div>
-		<p>
-			This database contains flammability test configurations, 
-			materials, constructions, test results and related information 
-			for various Zodiac Aerospace programs.
-			The database maybe searched by general or specific test specimen
-			constructions and materials, specific document information
-			or material manufacturer by picking the applicable search button
-			below.
-		</p>
 		
-		<div class="buttons">
-			<div class="button">
-				<%= link_to "Search", simple_search_path %>
-			</div>
-			
-			<div class="button">
-					<%= link_to 'Add New Material', new_speciman_path %>
-			</div>
+		<div class="button">
+				<%= link_to 'Add New Material', new_speciman_path %>
 		</div>
 	</div>
 </section>

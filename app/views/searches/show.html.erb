@@ -1,24 +1,22 @@
-<div class="container">
-  <h1>Search Results</h1>
-  <% if @search.blank? %>
-    <h4>There are no materials containing <%= params[:search] %>.</h4>
-    <% else %>
-    <table class="table">
-    	<thead>
-    		<tr>
-    			<th>
-    			</th>
-    			<th>Test Plan</th>
-    			<th>Cushion</th>
-    			<th>Seat Model</th>
-    			<th>Foam A</th>
-    			<th>Foam B</th>
-    			<th>Fireblock Type</th>
-    		</tr>
-    	</thead>
-    	<tbody>
-        <%= render @search.specimen %>
-      </tbody>
-    </table>
-  <% end %>
-</div>
+<h2>Search Results</h2>
+<% if @search.blank? %>
+  <h4>There are no materials containing <%= params[:search] %>.</h4>
+  <% else %>
+  <table class="table">
+  	<thead>
+  		<tr>
+  			<th>
+  			</th>
+  			<th>Test Plan</th>
+  			<th>Cushion</th>
+  			<th>Seat Model</th>
+  			<th>Foam A</th>
+  			<th>Fireblock Type</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+      <%= render @search.specimen %>
+    </tbody>
+  </table>
+<% end %>
+<p><%= link_to "Back", simple_search_path %></p>

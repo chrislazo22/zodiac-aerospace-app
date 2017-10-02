@@ -1,26 +1,29 @@
-h1 {
-  margin:0;
+h2 {
   text-align:center;
 }
 
-h2 {
-  margin:0%;
+form.search_form {
+  padding-top:7px;
+}
+
+form#new_search.new_search {
+  padding:10px;
 }
 
 .box {
+  margin:auto;
+  margin-top:15px;
+  width:60%;
   text-align:center;
-  border:2px solid;
-  padding:10px 40px;
+  border:1.5px solid;
+  padding:10px;
   font-size: 17px;
-  width: 50%;
   border-radius:10px;
-  margin-left:18%;
-  margin-top:5%;
 }
 
 input[type=text] {
   font-size: 13px;
-  width:50%;
+  width:60%;
   padding: 12px 20px;
   margin:10px 0;
   border: 2px solid #ccc;
@@ -35,5 +38,4 @@ input[type=submit] {
 
 p {
   text-align:center;
-  margin-right:5%;
 }

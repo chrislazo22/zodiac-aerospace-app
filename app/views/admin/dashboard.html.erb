@@ -1,22 +1,20 @@
 <section>
-	<div class="container">
-		<div class="welcome">
-			Administration Page
+	<div class="welcome">
+		Administration Page
+	</div>
+	<p>
+		As an administrator, you can create users by selecting "Create User."
+		If you wish to make a certain an "Admin" user, do so by seleting admin when filling out the form.
+		To view all currect users, select "All Users". Here you can edit and delete users.
+	</p>
+	
+	<div class="buttons">
+		<div class="button">
+			<%= link_to "All Users", admin_path %>
 		</div>
-		<p>
-			As an administrator, you can create users by selecting "Create User."
-			If you wish to make a certain an "Admin" user, do so by seleting admin when filling out the form.
-			To view all currect users, select "All Users". Here you can edit and delete users.
-		</p>
 		
-		<div class="buttons">
-			<div class="button">
-				<%= link_to "All Users", admin_path %>
-			</div>
-			
-			<div class="button">
-					<%= link_to "Create User", admin_new_path %>
-			</div>
+		<div class="button">
+				<%= link_to "Create User", admin_new_path %>
 		</div>
 	</div>
 </section>

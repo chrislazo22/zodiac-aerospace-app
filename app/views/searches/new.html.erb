@@ -1,51 +1,49 @@
-<div class="container">
-  <div class="box">
-    <h2>Advanced Search</h2>
-    <%= form_for @search do |f| %>
-      <div class="field">
-        <%= f.label :test_plan_search, "Test Plan" %><br />
-        <%= f.text_field :test_plan_search%>
-      </div>
-      
-      <div class="field">
-        <%= f.label :cushion_search, "Cushion" %><br />
-        <%= f.text_field :cushion_search %>
-      </div>
-      
-      <div class="field">
-        <%= f.label :seat_model_search, "Seat Model" %><br />
-        <%= f.text_field :seat_model_search %>
-      </div>
-      
-      <div class="field">
-        <%= f.label :foam_a_material_search, "Foam A Material" %><br />
-        <%= f.text_field :foam_a_material_search %>
-      </div>
-      
-      <div class="field">
-        <%= f.label :foam_b_material_search, "Foam B Material" %><br />
-        <%= f.text_field :foam_b_material_search %>
-      </div>
-      
-      <div class="field">
-        <%= f.label :fireblock_type_search, "Fireblock Type" %><br />
-        <%= f.text_field :fireblock_type_search %>
-      </div>
+<h2>Advanced Search</h2>
+<div class="box">
+  <%= form_for @search do |f| %>
+    <div class="field">
+      <%= f.label :test_plan_search, "Test Plan" %><br />
+      <%= f.text_field :test_plan_search%>
+    </div>
     
-      <div class="field">
-        <%= f.label :fireblock_part_number_search, "Fireblock Part Number" %><br />
-        <%= f.text_field :fireblock_part_number_search %>
-      </div>
-      
-      <div class="field">
-        <%= f.label :flame_treatment_search, "Flame Treatment" %><br />
-        <%= f.text_field :flame_treatment_search %>
-      </div>
-      
-      <div class="actions">
-        <br><%= f.submit "Search" %>
-      </div>
-    <% end %>
-    <%= link_to "Back", simple_search_path %>
-  </div>
+    <div class="field">
+      <%= f.label :cushion_search, "Cushion" %><br />
+      <%= f.text_field :cushion_search %>
+    </div>
+    
+    <div class="field">
+      <%= f.label :seat_model_search, "Seat Model" %><br />
+      <%= f.text_field :seat_model_search %>
+    </div>
+    
+    <div class="field">
+      <%= f.label :foam_a_material_search, "Foam A Material" %><br />
+      <%= f.text_field :foam_a_material_search %>
+    </div>
+    
+    <div class="field">
+      <%= f.label :foam_b_material_search, "Foam B Material" %><br />
+      <%= f.text_field :foam_b_material_search %>
+    </div>
+    
+    <div class="field">
+      <%= f.label :fireblock_type_search, "Fireblock Type" %><br />
+      <%= f.text_field :fireblock_type_search %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :fireblock_part_number_search, "Fireblock Part Number" %><br />
+      <%= f.text_field :fireblock_part_number_search %>
+    </div>
+    
+    <div class="field">
+      <%= f.label :flame_treatment_search, "Flame Treatment" %><br />
+      <%= f.text_field :flame_treatment_search %>
+    </div>
+    
+    <div class="actions">
+      <br><%= f.submit "Search" %>
+    </div>
+  <% end %>
+  <p><%= link_to "Back", simple_search_path %></p>
 </div>

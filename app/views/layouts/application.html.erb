@@ -10,14 +10,16 @@
 </head>
 <body>
 	<%= render 'shared/nav' %>
-  <%= yield %>
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-	<footer>
-  <p>
-    &copy Zodiac Aerospace | Zodiac Seats California
-  </p>
-  </footer>
+	<div class="container">
+    <%= yield %>
+  	<p class="notice"><%= notice %></p>
+  	<p class="alert"><%= alert %></p>
+  	<footer>
+    <p>
+      &copy Zodiac Aerospace | Zodiac Seats California
+    </p>
+    </footer>
+  </div>
 </body>
 </html>
 
