@@ -9,16 +9,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<%= render 'shared/nav' %>
 	<div class="container">
+	  <%= render 'shared/nav' %>
     <%= yield %>
   	<p class="notice"><%= notice %></p>
   	<p class="alert"><%= alert %></p>
-  	<footer>
-    <p>
-      &copy Zodiac Aerospace | Zodiac Seats California
-    </p>
-    </footer>
+  	<%= render 'shared/footer' %>
   </div>
 </body>
 </html>

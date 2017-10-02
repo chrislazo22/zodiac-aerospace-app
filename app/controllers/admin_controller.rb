@@ -28,14 +28,14 @@ class AdminController < Devise::RegistrationsController
   
   def destroy
     @user.destroy
-    redirect_to admin_path, notice: "The user was deleted"
+    redirect_to admin_path, notice: "User Deleted Successfully"
   end
   
   
   private
   def authorize_admin
     return unless !current_user.admin?
-    redirect_to root_path, alert: 'Admin only!'
+    redirect_to root_path, alert: 'Admin Only!'
   end
   
   def set_user

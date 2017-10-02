@@ -28,7 +28,7 @@ before_action :set_specimen, only: [:show, :edit, :update, :destroy]
   def create 
     @specimen = Speciman.new(specimen_params)
     if @specimen.save
-      redirect_to @specimen, notice: 'Material was added successfully'
+      redirect_to @specimen, notice: 'Material Was Added Successfully'
     else
       render :new
     end
