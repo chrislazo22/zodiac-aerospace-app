@@ -12,9 +12,9 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Fix pagination: back function does not include search and fix page buttons
+- Pagination for adv search
+- Admin: creating a user
 - Link PDF test data sheets to company server
-- Remove search spec from data_entry spec
 - Deploy
 
 #### Versions

@@ -2,6 +2,10 @@ h2 {
   text-align:center;
 }
 
+section {
+  margin-top:40px;
+}
+
 .form-box {
   border: 2px solid;
   padding: 20px;

@@ -38,4 +38,21 @@ describe 'search' do
       expect(page).to have_content("4FR4114-12")
     end
   end
+  
+  describe 'search function' do
+    before do 
+      visit simple_search_path
+    end
+    
+    it 'has a search bar' do
+      find_field('Search').value
+    end
+    
+    it 'outputs a value' do 
+      fill_in :search, with: "4FR4114-12"
+      click_button('Search')
+      
+      expect(page).to have_content("4FR4114-12")
+    end
+  end
 end
