@@ -12,6 +12,7 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
+-Run rspec, clear faliures
 - Pagination for adv search
 - Admin: creating a user
 - Link PDF test data sheets to company server

@@ -45,7 +45,7 @@ describe 'search' do
     end
     
     it 'has a search bar' do
-      find_field('Search').value
+      find_button('Search').click
     end
     
     it 'outputs a value' do 

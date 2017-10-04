@@ -25,9 +25,6 @@ describe 'admin page' do
       
       expect(page.status_code).to eq(200)
     end
-    
-    xit 'can be edited' do 
-    end
   end
   
   describe 'index page' do

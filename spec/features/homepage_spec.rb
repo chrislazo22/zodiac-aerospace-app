@@ -16,7 +16,7 @@ describe 'homepage' do
       visit root_path
       
       expect(page).to have_content('Search')
-      expect(page).to have_content('Data Entry')
+      expect(page).to have_content('Add New Material')
     end
   end
 end
