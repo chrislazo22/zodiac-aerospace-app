@@ -20,9 +20,9 @@ class AdminController < Devise::RegistrationsController
   def create
     build_resource(sign_up_params)
     if resource.save
-      redirect_to admin_dashboard_path
+      redirect_to admin_path
     else
-      redirect_to root_path
+      render :new, notice: "Invalid Entry"
     end
   end
   
@@ -43,6 +43,6 @@ class AdminController < Devise::RegistrationsController
   end
   
   def sign_up_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :admin)
   end
 end

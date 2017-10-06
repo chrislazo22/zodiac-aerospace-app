@@ -12,8 +12,7 @@ Key Requirements: An internal application for the certification deparment. This 
 
 
 ### Next Step(s)
-- Pagination for adv search
-- Admin: creating a user
+- Admin: creating an admin user
 - Link PDF test data sheets to company server
 - Deploy
 
