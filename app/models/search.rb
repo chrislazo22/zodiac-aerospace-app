@@ -17,7 +17,7 @@ class Search < ActiveRecord::Base
     specimen = specimen.where("fireblock_type like ?", "%#{fireblock_type_search}%") if fireblock_type_search.present?
     specimen = specimen.where("fireblock_part_number like ?", "%#{fireblock_part_number_search}%") if fireblock_part_number_search.present?
     specimen = specimen.where("flame_treatment like ?", "%#{flame_treatment_search}%") if flame_treatment_search.present?
-    
+
     specimen
   end
 end
