@@ -64,6 +64,20 @@ tr:hover {
 
 
 //GLOBAL//
+.button{
+  display: inline-block;
+  padding: 15px 25px 17px;
+  border: 1px solid;
+  border-color: #000;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #e6e6e6;
+  border-color: #ffffff;
+}
 
 a {
   text-decoration:none;
@@ -126,7 +140,7 @@ a:hover {
   }
 }
 
-/* MEDIA QUERIES
+/*MEDIA QUERIES
 -------------------------------------------------------*/
 
 @media(max-width: 880px) {
@@ -150,7 +164,11 @@ a:hover {
     width: 90%;
     text-align: center;
     margin:18px;
-    padding:16px;
+    padding:10px 2px;
+  }
+  
+  .button {
+    width:90%;
   }
 }
 
