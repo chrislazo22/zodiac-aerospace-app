@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.3.0"
 
 gem 'rails', '4.2.5'
 gem 'pg', '~> 0.20.0'
@@ -27,3 +28,4 @@ end
 gem 'devise', '~> 4.2'
 gem 'pry-rails', group: [:development, :test]
 gem 'will_paginate', '~> 3.1.0'
+gem 'rails_12factor', group: :production
