@@ -11,11 +11,6 @@ Key Requirements: An internal application for the certification deparment. This 
 - Materials
 
 
-### Next Step(s)
-- Admin: creating an admin user
-- Link PDF test data sheets to company server
-- Deploy
-
 #### Versions
 - ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
 - Rails 4.2.5
