@@ -1,18 +1,18 @@
 <% if current_user %>
-<nav>
-	<div class="nav-container">
-		<div id="logo">
-			<%= link_to (image_tag 'logo.jpg'), root_path %>
-		</div>
-		<% if current_user %>
-			<nav>
-				<ul>
+<div class="navbar-fixed">
+	<nav>
+	  <div class="nav-wrapper white">
+			<div class="col s12"></div>
+				<a href="<%= root_path %>" class="brand-logo">
+					<img src="/assets/logo.jpg" class="logo-img">
+				</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><%= link_to "Home", root_path %></li>
 					<li><%= link_to "Admin", admin_dashboard_path%></li>
 					<li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
 				</ul>
-			</nav>
-		<% end %>
-	</div>
-</nav>
+			</div>
+		</div>
+	</nav>
+</div>
 <% end %>

@@ -15,13 +15,16 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <style>
+    nav ul li a{
+    color: black;
+    }
+  </style>
 </head>
 <body>
+  <%= render 'shared/nav' %>
 	<div class="container">
-	  <%= render 'shared/nav' %>
-
     <%= yield %>
-
   	<%= render 'shared/footer' %>
   </div>
 </body>
