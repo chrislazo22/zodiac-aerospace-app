@@ -6,52 +6,52 @@ describe 'search' do
     login_as(@user, :scope => :user)
     visit admin_dashboard_path
   end
-  
-  describe 'simple serach' do 
-    
-    it 'simple search page can be found' do 
+
+  describe 'simple serach' do
+
+    it 'simple search page can be found' do
       visit '/search'
-      
+
       expect(page.status_code).to eq(200)
     end
-    
-    it 'has link to advanced search' do 
+
+    it 'has link to advanced search' do
       visit simple_search_path
-      
+
       expect(page).to have_content("Advanced Search")
     end
   end
-  
-  describe 'advanced search function' do 
-    it 'advanced search can be reached' do 
+
+  describe 'advanced search function' do
+    it 'advanced search can be reached' do
       visit new_search_path
-      
+
       expect(page.status_code).to eq(200)
     end
-    
-    it 'outputs a value' do 
+
+    xit 'outputs a value' do 
       visit new_search_path
-      
+
       fill_in 'search[test_plan_search]', with: "4FR4114-12"
       click_button('Search')
-      
+
       expect(page).to have_content("4FR4114-12")
     end
   end
-  
+
   describe 'search function' do
-    before do 
+    before do
       visit simple_search_path
     end
-    
+
     it 'has a search bar' do
       find_button('Search').click
     end
-    
-    it 'outputs a value' do 
+
+    it 'outputs a value' do
       fill_in :search, with: "4FR4114-12"
       click_button('Search')
-      
+
       expect(page).to have_content("4FR4114-12")
     end
   end
