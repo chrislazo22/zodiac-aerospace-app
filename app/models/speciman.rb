@@ -1,16 +1,16 @@
-class Speciman < ActiveRecord::Base
-  
+class Speciman < ApplicationRecord
+
   validates :test_plan, presence: true
   validates :cushion, presence: true
   validates :seat_model, presence: true
   validates :foam_a_material, presence: true
   validates :foam_a_percent, presence: true
   validates :fireblock_part_number, presence: true
-  
+
   def self.search(search)
     where('test_plan LIKE ?', "%#{search}%")
   end
-  
+
   def self.to_csv(options = {})
     CSV.generate(options) do |csv|
       csv << column_names
@@ -20,4 +20,3 @@ class Speciman < ActiveRecord::Base
     end
   end
 end
-
